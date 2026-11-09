@@ -2,17 +2,18 @@ name: Test cucumber
 
 permissions: {}
 
-on:
-  push:
-    branches:
-      - main
-      - renovate/*
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "0 5 * * *"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - renovate/*
+#   pull_request:
+#     branches:
+#       - main
+#   schedule:
+#     - cron: "0 5 * * *"
+# 
 jobs:
   test:
     strategy:

@@ -2,10 +2,11 @@ name: Release GitHub
 
 permissions: {}
 
-on:
-  push:
-    branches: [release/*]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [release/*]
+# 
 jobs:
   create-github-release:
     name: Create GitHub Release and Git tag

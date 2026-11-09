@@ -2,11 +2,12 @@ name: Release RubyGems
 
 permissions: {}
 
-on:
-  push:
-    branches:
-      - release/*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - release/*
+# 
 jobs:
   publish-rubygem:
     name: Publish Ruby Gem
